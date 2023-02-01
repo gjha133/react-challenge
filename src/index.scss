@@ -7,6 +7,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 14px;
   box-sizing: border-box;
+
+  button {
+    cursor: pointer;
+  }
 }
 
 .container {
@@ -20,7 +24,6 @@ body {
   flex-direction: column;
   border-radius: 10px;
   box-shadow: 0 0 1px rgb(146, 148, 150);
-
 }
 
 .card {
@@ -50,15 +53,14 @@ body {
 
   button {
     border-radius: 15px;
-    cursor: pointer;
     color: white;
-    background-color: rgb(225, 31, 31);
+    background-color: rgb(243, 75, 75);
     border-style: none;
     padding: 7.5px;
     width: 120px;
 
     &:hover {
-      background-color: rgb(236, 92, 92);
+      background-color: rgb(219, 23, 23);
     }
   }
 }
@@ -97,3 +99,22 @@ body {
     }
   }
 }
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    border-style: none;
+    border-width: 0px;
+    background-color: #e6ebf0;
+    padding: 3px 7px;
+  }
+
+  .active {
+    background-color: rgb(243, 75, 75);
+    color: #e6ebf0;
+  }
+}
+
