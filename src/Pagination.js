@@ -22,7 +22,7 @@ const pagination = ({
                 onClick={handleDec}
                 disabled={currentPage === 1}
             >
-                {`<`}
+                <strong>{`<`}</strong>
             </button>
             {
                 pages.map((page, index) => {
@@ -40,7 +40,7 @@ const pagination = ({
                 onClick={handleInc}
                 disabled={currentPage === (Math.ceil(totalPosts/postsPerPage))}
             >
-                {`>`}
+                <strong>{`>`}</strong>
             </button>
         </div>
     );

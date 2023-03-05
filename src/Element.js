@@ -1,9 +1,7 @@
-
 import { useState } from "react";
 
 const Element = ({item}) => {
     const [isShowing, setIsShowing] = useState(false)
-    const toggleShow = () => setIsShowing(() => !isShowing)
 
     const { 
         name, 
@@ -18,6 +16,8 @@ const Element = ({item}) => {
 } = item
 
     let buttonText = isShowing ? "Hide Details" : "View Details"
+
+    const toggleShow = () => setIsShowing(() => !isShowing)
 
     return (
         <>
